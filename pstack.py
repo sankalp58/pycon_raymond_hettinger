@@ -10,7 +10,7 @@ class Circle(object):
     
     '''
 
-    version ='0.1' #class variable
+    version ='0.2a' #class variable
 
     def  __init__(self,radius):
 
@@ -31,6 +31,12 @@ class Circle(object):
         'Construct a circle from bounding box diagnal '
         radius = bbd/2.0/math.sqrt(2.0)
         return  cls(radius)  # to know from which class the method was called
+
+    @staticmethod #attach function to classes
+    def angle2grade(angle):
+        return   math.tan(math.radians(angle)) * 100.0
+
+
 
 
 if __name__ == '__main__':
