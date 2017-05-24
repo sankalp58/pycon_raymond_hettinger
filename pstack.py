@@ -30,7 +30,7 @@ class Circle(object):
     def from_bbd(cls,bbd):      #alternative construcotr
         'Construct a circle from bounding box diagnal '
         radius = bbd/2.0/math.sqrt(2.0)
-        return  Circle(radius)
+        return  cls(radius)  # to know from which class the method was called
 
 
 if __name__ == '__main__':
